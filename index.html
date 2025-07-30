@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第5章 生態系とその保全</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(45deg, #22c55e, #16a34a);
+        }
+        .marker-1 {
+            background: linear-gradient(transparent 60%, #a7f3d0 60%);
+        }
+        .marker-2 {
+            background: linear-gradient(transparent 60%, #bae6fd 60%);
+        }
+        h2 {
+            scroll-margin-top: 20px;
+        }
+        .icon-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0fdf4;
+            border: 1px solid #dcfce7;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            height: 100%;
+        }
+        .icon-card svg {
+            width: 4rem;
+            height: 4rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto p-4 md:p-8">
+
+        <!-- ヒーローセクション -->
+        <div class="hero-bg rounded-lg text-white p-8 md:p-16 mb-8 flex flex-col justify-center items-center text-center shadow-lg">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">第5章 生態系とその保全</h1>
+            <p class="text-lg md:text-xl">地球という大きな家で、生き物たちが織りなす壮大な物語を学ぼう。</p>
+        </div>
+
+        <!-- 目次ナビゲーション -->
+        <div class="bg-gray-100 p-4 rounded-lg mb-12 text-center">
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
+                <a href="#lesson1" class="w-full md:w-auto bg-white shadow hover:shadow-lg text-emerald-600 font-bold py-3 px-6 rounded-lg transition text-center">1時間目：生態系と生物の多様性</a>
+                <a href="#lesson2" class="w-full md:w-auto bg-white shadow hover:shadow-lg text-sky-600 font-bold py-3 px-6 rounded-lg transition text-center">2時間目：生態系のバランスと保全</a>
+            </div>
+        </div>
+
+        <!-- 1時間目：生態系と生物の多様性 -->
+        <section id="lesson1" class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-bold text-emerald-600 border-b-4 border-emerald-200 pb-2 mb-6">1時間目：<span class="marker-1">生態系と生物の多様性</span></h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">そもそも「生態系」とは？</h3>
+                    <p class="mb-4">まず、基本からおさえましょう！ ある地域に住む<span class="font-bold text-emerald-700">生物の集団</span>と、それらを取り巻く<span class="font-bold text-emerald-700">環境</span>（光、水、大気、土壌など）をひとつのまとまりとして捉えたものを<strong class="text-2xl font-bold text-red-500">生態系</strong>と呼びます。</p>
+                    <div class="bg-gray-100 rounded-lg p-4 grid md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold">非生物的環境</h4>
+                            <p>光、水、温度、大気、土壌など、生き物ではない環境要因です。これらは生物に影響を与えます（<span class="font-bold">作用</span>）。</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">生物的環境</h4>
+                            <p>同じ種類や違う種類の生物同士の関係です。生物もまた環境に影響を与えています（<span class="font-bold">環境形成作用</span>）。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">生態系を支える３つの役割</h3>
+                        <p class="mb-4">生態系の生物たちは、その役割によって大きく3つのグループに分けられます。</p>
+                        <ul class="list-disc list-inside space-y-2">
+                            <li><strong class="text-green-600">生産者</strong>: 植物や藻類など、光合成によって無機物から有機物を作り出す独立栄養生物です。</li>
+                            <li><strong class="text-orange-600">消費者</strong>: 生産者が作った有機物を食べ物として利用する従属栄養生物です。草食動物や肉食動物など。</li>
+                            <li><strong class="text-yellow-700">分解者</strong>: 生物の死骸や排出物などを分解して無機物に戻す菌類や細菌などです。</li>
+                        </ul>
+                    </div>
+                    <!-- SVGによる生態系構造の図 -->
+                    <div class="w-full bg-gray-50 p-4 rounded-lg border">
+                        <svg viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg">
+                            <text x="70" y="10" font-size="8" class="font-bold">生態系の構造</text>
+                            <rect x="10" y="40" width="40" height="40" fill="#a7f3d0" rx="2"/><text x="18" y="65" font-size="6">生産者</text><text x="20" y="72" font-size="5">(植物)</text>
+                            <rect x="80" y="20" width="40" height="40" fill="#fed7aa" rx="2"/><text x="88" y="45" font-size="6">消費者</text><text x="86" y="52" font-size="5">(草食)</text>
+                            <rect x="150" y="20" width="40" height="40" fill="#fecaca" rx="2"/><text x="158" y="45" font-size="6">消費者</text><text x="156" y="52" font-size="5">(肉食)</text>
+                            <rect x="80" y="90" width="40" height="25" fill="#fef08a" rx="2"/><text x="88" y="105" font-size="6">分解者</text>
+                            <path d="M52 60 L78 45" stroke="#6b7280" stroke-width="1" fill="none" marker-end="url(#arrow)"/><path d="M122 40 L148 40" stroke="#6b7280" stroke-width="1" fill="none" marker-end="url(#arrow)"/><path d="M40 82 C 40 95, 70 95, 78 100" stroke="#6b7280" stroke-width="0.5" fill="none" marker-end="url(#arrow)"/><path d="M100 62 C 90 75, 90 85, 90 88" stroke="#6b7280" stroke-width="0.5" fill="none" marker-end="url(#arrow)"/>
+                            <path d="M170 62 C 160 75, 120 85, 115 88" stroke="#6b7280" stroke-width="0.5" fill="none" marker-end="url(#arrow)"/>
+                            <defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="3" markerHeight="3" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/></marker></defs>
+                        </svg>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">生態系の例：陸上と水界</h3>
+                    <p class="mb-4">生態系は、森林や草原のような陸上だけでなく、河川や湖沼、海洋といった水界にも存在します。特に身近な水界生態系として湖沼を見てみましょう。</p>
+                    <div class="bg-sky-50 border-l-4 border-sky-500 p-4 rounded-md">
+                        <h4 class="font-bold text-sky-800">湖沼生態系</h4>
+                        <p class="mt-2">湖や沼には、陸上から栄養を含んだ水が流れ込みます。水辺にはヨシのような<strong class="font-bold">抽水植物</strong>、水面に葉を浮かべるヒシなどの<strong class="font-bold">浮葉植物</strong>、ホテイアオイのように水面に浮かぶ<strong class="font-bold">浮水植物</strong>、水中に沈んでいるクロモなどの<strong class="font-bold">沈水植物</strong>が、水深や光の強さに応じてすみ分けています。これらの多様な環境が、魚類や水生昆虫などのすみかや産卵場所となり、豊かな生態系を形作っています。</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">食物連鎖と食物網 🕸️</h3>
+                    <p class="mb-4">「食べる、食べられる」という生物間のつながりを<strong class="font-bold">食物連鎖</strong>といいます。この食物連鎖の中での生物の食べる・食べられるの位置を<strong class="font-bold text-teal-600">栄養段階</strong>といいます。生産者を第一栄養段階、生産者を食べる一次消費者を第二栄養段階、一次消費者を食べる二次消費者を第三栄養段階…と段階的に分けることができます。</p>
+                    <p class="mb-4">しかし、実際の自然界では、食物連鎖は複雑な網目状になっており、これを<strong class="font-bold">食物網</strong>と呼びます。食物網が複雑であるほど、生態系は安定しやすくなります。</p>
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <p>また、生産者から始まる食物連鎖だけでなく、生物の遺骸や排出物から始まる<strong class="font-bold text-yellow-800">腐食連鎖</strong>も、生態系の物質循環において非常に重要な役割を担っています。</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">生物多様性って？ 🦋</h3>
+                    <p class="mb-4">「生物多様性」という言葉には、実は3つのレベルがあります。これらは互いに深く関わり合って、豊かで安定した自然環境を支えているのです。</p>
+                    <div class="grid md:grid-cols-3 gap-4 text-center">
+                        <div class="bg-emerald-100 p-4 rounded-lg"><strong class="block text-emerald-800 text-lg">生態系の多様性</strong><p class="text-sm">森林、河川、サンゴ礁など</p></div>
+                        <div class="bg-emerald-100 p-4 rounded-lg"><strong class="block text-emerald-800 text-lg">種の多様性</strong><p class="text-sm">様々な種類の生物がいること</p></div>
+                        <div class="bg-emerald-100 p-4 rounded-lg"><strong class="block text-emerald-800 text-lg">遺伝子の多様性</strong><p class="text-sm">同じ種でも個性があること</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2時間目：生態系のバランスと保全 -->
+        <section id="lesson2" class="mb-16 bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-bold text-sky-600 border-b-4 border-sky-200 pb-2 mb-6">2時間目：<span class="marker-2">生態系のバランスと保全</span></h2>
+            
+            <div class="space-y-10">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">生態系のバランスと変動</h3>
+                    <p class="mb-4">生態系に住む生物の数は、周期的に増えたり減ったりを繰り返しながら、全体のバランスを保っています。また、台風や人間活動などの<strong class="font-bold">撹乱（かくらん）</strong>があっても、その程度が小さければ<strong class="font-bold">復元力</strong>によって元の状態に戻ります（<strong class="font-bold">自然浄化</strong>など）。</p>
+                    <div class="w-full bg-gray-50 p-4 rounded-lg border mb-6">
+                        <p class="font-bold text-center mb-2">個体数変動のグラフ（カンジキウサギとオオヤマネコの例）</p>
+                        <div class="relative h-48"><div class="absolute bottom-0 left-0 w-full h-full border-l border-b border-gray-400"></div><svg class="absolute w-full h-full" viewBox="0 0 100 50"><polyline points="5,40 15,10 25,45 35,5 45,40 55,10 65,42 75,8 85,35 95,15" stroke="#38bdf8" stroke-width="1" fill="none"/><text x="20" y="8" font-size="4" fill="#38bdf8">カンジキウサギ</text><polyline points="5,45 15,40 25,15 35,42 45,10 55,45 65,15 75,40 85,12 95,38" stroke="#f87171" stroke-width="1" fill="none"/><text x="60" y="38" font-size="4" fill="#f87171">オオヤマネコ</text></svg></div>
+                    </div>
+                    <p class="mb-4">しかし、復元力を超える撹乱は、生態系のバランスを崩壊させることもあります。その一例が富栄養化です。</p>
+                    <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded-md">
+                        <h4 class="font-bold text-red-800">富栄養化と赤潮・アオコ</h4>
+                        <p class="mt-2">生活排水などが大量に流れ込み、水中の栄養塩類（窒素やリンなど）が過剰になる現象を<strong class="font-bold">富栄養化</strong>といいます。富栄養化が進むと、植物プランクトンが異常発生し、水面が赤褐色になる<strong class="font-bold">赤潮</strong>や、青緑色になる<strong class="font-bold">アオコ</strong>が発生します。これらは毒素を出したり、水中の酸素を大量に消費したりして、他の水生生物に大きな被害を与えます。</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">生態系の鍵を握る「キーストーン種」🔑</h3>
+                    <p>食物網の中で、その生物がいなくなると生態系全体に非常に大きな影響を与えてしまう重要な種を<strong class="font-bold">キーストーン種</strong>と呼びます。例えば、ラッコはウニを食べることで、ウニが海藻（ケルプ）を食べ尽くすのを防いでいます。ラッコがいなくなるとウニが増え、海藻の森が失われ、そこにすむ多くの生物が影響を受けます。キーストーン種は、生態系のバランスを保つ上で鍵となる存在なのです。</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">人間活動と生態系の危機</h3>
+                    <p class="mb-4">私たちの活動は、地球の生態系に大きな影響を与えています。生物多様性が失われる主な原因は、大きく4つに分けられます。</p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="icon-card"><svg class="text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h10a2 2 0 002-2v-1a2 2 0 012-2h1.945M7.8 17.2a4 4 0 005.6 0M12 14a2 2 0 100-4 2 2 0 000 4zM12 3v1m0 16v1m-6-8.5H5m14 0h-1M6.343 6.343l-1-1m13.314 0l-1 1m-11.314 11.314l-1 1m13.314 0l-1-1"></path></svg><h4 class="font-bold text-rose-800">① 地球温暖化</h4><p class="text-center text-sm">温室効果ガスの増加で気温が上昇。サンゴの白化などが深刻化。</p></div>
+                        <div class="icon-card"><svg class="text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><h4 class="font-bold text-rose-800">② 外来生物</h4><p class="text-center text-sm">本来いなかった生物が持ち込まれ、在来の生態系を破壊。特に影響の大きいものは<strong class="font-bold">侵略的外来生物</strong>と呼ばれる。</p></div>
+                        <div class="icon-card"><svg class="text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-3-3v3"></path></svg><h4 class="font-bold text-rose-800">③ 開発による生息地の分断</h4><p class="text-center text-sm">道路やダム建設で生物の移動が妨げられる。</p></div>
+                        <div class="icon-card"><svg class="text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7.014A8.003 8.003 0 0122 12c0 3-1 7-6.343 6.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z"></path></svg><h4 class="font-bold text-rose-800">④ 里山の変化</h4><p class="text-center text-sm">人の手が入らなくなり、里山の環境と生物が失われる。</p></div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">生態系の保全と私たちの未来</h3>
+                    <p class="mb-4">私たちは、水や食料、きれいな空気など、生態系から数多くの恩恵（<strong class="font-bold">生態系サービス</strong>）を受けています。この恵みを受け続けるため、様々な保全活動が行われています。</p>
+                    <ul class="list-disc list-inside space-y-2 bg-gray-100 p-4 rounded-lg">
+                        <li><strong>分断への対策</strong>: ダムに<strong class="font-bold">魚道</strong>を設置したり、道路に<strong class="font-bold">アニマルパスウェイ</strong>をかけたりする。</li>
+                        <li><strong>環境アセスメント</strong>: 大規模開発の前に、環境への影響を調査・予測・評価する。</li>
+                        <li><strong>絶滅危惧種の保護</strong>: <strong class="font-bold">レッドリスト</strong>や<strong class="font-bold">種の保存法</strong>に基づいて希少な生物を保護する。</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="bg-emerald-50 border-l-4 border-emerald-500 p-4 rounded-md">
+                        <h4 class="font-bold text-emerald-800">私たちにできること</h4>
+                        <p class="mt-2">生態系を守るためには、私たち一人ひとりの行動が不可欠です。</p>
+                        <ul class="list-disc list-inside mt-2">
+                            <li>身の回りの生き物に関心を持つ。</li>
+                            <li>生態系の保全活動に参加する。</li>
+                            <li>外来生物を「入れない、捨てない、拡げない」。</li>
+                            <li>持続可能な社会を目指す国際目標（<strong>SDGs</strong>）に関心を持ち、環境に配慮した生活を心がける。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 Interactive Biology Learning. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
